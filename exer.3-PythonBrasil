@@ -1,10 +1,3 @@
-#'''Faça um programa que leia e valide as seguintes informações:
-Nome: maior que 3 caracteres;
-Idade: entre 0 e 150;
-Salário: maior que zero;
-Sexo: 'f' ou 'm';
-Estado Civil: 's', 'c', 'v', 'd';'''
-
 #sem utilizar while
 print('-=-'*15)
 print('      \033[1;33mInforme seus dados corretamentes\033[m')
@@ -30,6 +23,9 @@ while len(nome ) < 3:
 idade = int(input('Informe sua idade: '))
 while idade > 150:
     idade = int(input('Informe sua idade novamente:'))
+salario = float(input('Informe seu salário: ')
+while idade < 0:
+    salario = float(input('Informe seu salário novamente: ')
 sexo = str(input('Informe seu sexo:[F/M/O] ')).strip().upper()
 while sexo != 'F' and sexo != 'M' and sexo != 'O':
     sexo = str(input('Informe seu sexo novamente: ')).strip().upper()
