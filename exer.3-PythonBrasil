@@ -24,7 +24,7 @@ idade = int(input('Informe sua idade: '))
 while idade > 150:
     idade = int(input('Informe sua idade novamente:'))
 salario = float(input('Informe seu salário: ')
-while idade < 0:
+while salario < 0:
     salario = float(input('Informe seu salário novamente: ')
 sexo = str(input('Informe seu sexo:[F/M/O] ')).strip().upper()
 while sexo != 'F' and sexo != 'M' and sexo != 'O':
