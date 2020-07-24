@@ -1,0 +1,12 @@
+print(' ')
+print('\033[1;30mDigite 5 números inteiros e descubra a \033[1;33mSOMA\033[1;30m e a \033[1;33mMÉDIA\033[1;30m deles')
+print('\033[1;33m>_<'*20)
+print(' ')
+soma = 0
+media = 0
+for c in range(1,6):
+    num = int(input('\033[1;30mDigite o {}º número: '.format(c)))
+    soma += num
+    media = soma/c
+print('A \033[1;33mSOMA\033[1;30m dos 5 números é igual à \033[1;33m{}'.format(soma))
+print('\033[1;30mA \033[1;33mMÉDIA\033[1;30m dos 5 números é igual à \033[1;33m{}'.format(media))
