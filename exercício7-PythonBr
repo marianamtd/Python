@@ -1,0 +1,8 @@
+print('\033[1mDigite 5 números \033[1;33mINTEIROS\033[m e veja qual é o \033[1;33mMAIOR')
+print('-_-'*15)
+maior = 0
+for c in range(1,6):
+    num = int(input('Digite {}º número: '.format(c)))
+    if num > maior :
+        maior = num
+print('\033[1;33m{}\033[1;30m é o \033[1;33mMAIOR'.format(maior))
