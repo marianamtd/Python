@@ -1,0 +1,9 @@
+print('\033[1;30m<_>'*20)
+print('      \033[1;35mDigite dois números inteiros de sua preferência')
+print('\033[1;30m<_>'*20)
+soma = 0
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número: '))
+for c in range(n1 + 1, n2, 1):
+    soma = soma + c
+print('A soma é igual à {}'.format(soma), end=' ')
