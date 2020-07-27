@@ -1,0 +1,7 @@
+print('\033[1;30m*_'*10)
+print('\033[1;36m     EXPOENTE')
+print('\033[1;30m*_'*10)
+base = float(input('Escolha um número para a \033[1;36mBASE\033[1;30m: '))
+exp = float(input('\033[1;30mEscolha um número para o \033[1;36mEXPOENTE\033[1;36m: '))
+resul = base ** exp
+print('\033[1;30mA base \033[1;36m{:.0f}\033[1;30m elevada a \033[1;36m{:.0f}\033[1;30m é igual a \033[1;36m{:.0f}'.format(base, exp, resul))
