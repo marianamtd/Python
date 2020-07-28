@@ -1,0 +1,19 @@
+print('\033[1;30m*_'*15)
+print('\033[1;35m        Gerador de PA')
+print('\033[1;30m*_'*15)
+pri = int(input('Primeiro termo: '))
+razao = int(input('Razão da PA: '))
+termo = pri
+cont = 1
+total = 0
+mais = 10
+while mais != 0:
+    total = total + mais
+    while cont <= total:
+        print('{} ->'.format(termo), end=' ')
+        termo += razao
+        cont += 1
+    print('Pausa')
+    mais = int(input('Quantos termos você quer mostrar a mais? '))
+print('Fim')
+print('Progressão finalizada com \033[1;35m{}\033[1;30m termos mostrados'.format(total))
