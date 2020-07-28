@@ -1,0 +1,4 @@
+print('\033[1;30m-_-'*17)
+print('\033[1;36m  Sequência de Fibonacci\033[m')
+print('\033[1;30m-_-'*17)
+termo = int(input('Quantos termos você quer mostrar? '))
