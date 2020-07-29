@@ -2,3 +2,14 @@ print('\033[1;30m-_-'*17)
 print('\033[1;36m  Sequência de Fibonacci\033[m')
 print('\033[1;30m-_-'*17)
 termo = int(input('Quantos termos você quer mostrar? '))
+t1 = 0
+t2 = 1
+print('{} -> {}'.format(t1, t2),end=' ')
+count = 3
+while count <= termo:
+    t3 = t1 + t2
+    print('-> {}'.format(t3), end=' ')
+    t1 = t2
+    t2 = t3
+    count += 1
+print('FIM')
