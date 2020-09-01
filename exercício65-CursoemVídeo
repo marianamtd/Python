@@ -1,7 +1,7 @@
 num = cont = count = soma = media = maior = menor = 0
 while cont != "N":
-    num = int(input('Digite um número: '))
-    cont = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+    num = int(input('\033[1;30mDigite um número: '))
+    cont = str(input('Quer continuar? \033[1;32m[S/N]\033[m ')).upper().strip()[0]
     soma += num
     count += 1
     if count == 1:
@@ -12,5 +12,5 @@ while cont != "N":
         if num < menor:
             menor = num
 media = soma / count
-print('Você digitou {} números e a média foi {}'.format(count, media))
-print('O maior valor foi {} e o menor foi {}'.format(maior, menor))
+print('\033[1;30mVocê digitou \033[1;32m{}\033[1;30m números e a média foi \033[1;32m{}'.format(count, media))
+print('\033[1;30mO \033[1;32mMAIOR\033[1;30m valor foi \033[1;32m{}\033[1;30m e o \033[1;32mMENOR\033[1;30m foi \033[1;32m{}'.format(maior, menor))
