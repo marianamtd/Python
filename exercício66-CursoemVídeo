@@ -1,1 +1,7 @@
-f
+n = s = 0
+while True:
+    n = int(input('\033[1;30mDigite um número: '))
+    if n == 999:
+        break
+    s += n
+print(f'\033[1;30mA soma será igual à \033[1;36m{s}')
