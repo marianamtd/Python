@@ -1,4 +1,4 @@
-print('\033[1;36mDigite 999 para parar o programa')
+print('\033[1;36mDigite \033[1;30m999\033[1;36m para parar o programa')
 n = s = 0
 while True:
     n = int(input('\033[1;30mDigite um número: '))
