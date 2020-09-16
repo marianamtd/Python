@@ -1,8 +1,11 @@
 print('\033[1;36mDigite \033[1;30m999\033[1;36m para parar o programa')
-n = s = 0
+n = s = c = 0
 while True:
     n = int(input('\033[1;30mDigite um número: '))
     if n == 999:
         break
     s += n
-print(f'\033[1;30mA soma será igual à \033[1;36m{s}')
+    c += 1
+    if n == 999:
+        break
+print(f'\033[1;30mForam \033[1;36m{c}\033[1;30m números e a soma é igual à \033[1;36m{s}')
