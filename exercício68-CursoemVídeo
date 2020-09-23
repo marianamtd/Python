@@ -1,9 +1,14 @@
+from random import randint
+print('\033[1;30m°'*20)
+print('   \033[1;35mPar ou Ímpar')
 print('\033[1;30m°'*20)
 count = 0
 while True:
     print('\033[1;30m°°'*20)
     n = int(input('\033[1;30mDigite um valor: '))
-    pi = str(input('\033[1;30mPar ou Ímpar? [P/I] ')).upper().strip()
+    pi = ' '
+    while pi not in 'PI':
+        pi = str(input('\033[1;30mPar ou Ímpar? [P/I] ')).upper()[0].strip()
     comp = randint(0, 10)
     soma = n + comp
     print(f'\033[1;30mVocê jogou \033[1;35m{n}\033[1;30m e o computador \033[1;35m{comp}\033[1;30m. O resultado é igual a \033[1;35m{soma}.')
