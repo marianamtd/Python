@@ -1,0 +1,10 @@
+print('\033[1;30m<_>'*20)
+print('\033[1;35mTabuada; digite um n° negativo para parar o programa')
+print('\033[1;30m<_>'*20)
+while True:
+    tab = int(input('Quer ver a tabuada de qual valor: '))
+    for c in range(1,11,1):
+     print(f'{tab} X {c} = {tab*c}')
+    if tab == abs(-):
+        break
+print('acabou')
