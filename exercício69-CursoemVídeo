@@ -1,0 +1,24 @@
+print('\033[1;35m*_'*15)
+print('\033[1;30m     CADASTRE UMA PESSOA')
+homem = mulher = maior = 0
+while True:
+    print('\033[1;35m*_' * 15)
+    ida = int(input('\033[1;30mIdade: '))
+    if ida > 18:
+        maior += 1
+    sexo = str(input('\033[1;30mSexo: [M/F] ')).upper().strip()
+    if sexo == 'M':
+        homem += 1
+    elif sexo == 'F' and ida < 20:
+        mulher += 1
+    while sexo != 'M' and sexo != 'F':
+        sexo = str(input('\033[1;30mSexo: [M/F] ')).upper().strip()
+    print('\033[1;35m*_' * 15)
+    prox = str(input('\033[1;30mQuer continuar? [S/N] ')).upper().strip()
+    while prox != 'S' and prox != 'N':
+        prox = str(input('\033[1;30mQuer continuar? [S/N] ')).strip().upper()
+    if prox == 'N':
+        break
+print(f'''{maior} tem mais de 18 anos
+{homem} homens foram contratados
+{mulher} mulher tem menos de 20 anos''')
