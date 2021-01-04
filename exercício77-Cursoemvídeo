@@ -1,0 +1,6 @@
+palavras = ('APRENDER','PROGRAMAR', 'LINGUAGEM','PYTHON','CURSO','GRATIS','ESTUDAR','PRATICAR','TRABALHAR','MERCADO',
+            'PROGRAMADOR', 'FUTURO')
+vogais = 'a', 'e', 'i', 'o', 'u'
+for vogal in palavras:
+    print(f'Na palavra {vogal} temos as vogais {palavras.count(vogais)}')
+    
