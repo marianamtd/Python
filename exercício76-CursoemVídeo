@@ -1,0 +1,18 @@
+elementos = ('Lápis', 1.75,
+             'Borracha', 2.0,
+             'Caderno',  15.90,
+             'Estojo', 25.00,
+             'Transferidor', 4.20,
+             'Compasso', 9.99,
+             'Mochila', 129.23,
+             'Canetas', 22.30,
+             'Livro', 34.90)
+print('--'*30)
+print('LISTAGEM DE PREÇOS')
+print('--'*30)
+for item in range(0, len(elementos)):
+    if item % 2 == 0:
+        print(f'{elementos[item]:.<30}R$',end='')
+    else:
+        print(f'{elementos[item]}')
+        
