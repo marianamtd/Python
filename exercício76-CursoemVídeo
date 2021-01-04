@@ -8,11 +8,10 @@ elementos = ('Lápis', 1.75,
              'Canetas', 22.30,
              'Livro', 34.90)
 print('--'*30)
-print('LISTAGEM DE PREÇOS')
+print(f'{"LISTAGEM DE PREÇOS":^40}')
 print('--'*30)
 for item in range(0, len(elementos)):
     if item % 2 == 0:
         print(f'{elementos[item]:.<30}R$',end='')
     else:
         print(f'{elementos[item]}')
-        
