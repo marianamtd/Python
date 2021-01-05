@@ -1,0 +1,9 @@
+numeros = []
+posicao = []
+numero
+for pos, num in enumerate(range(0,5)):
+    numeros.append(int(input(f'Digite um valor para a posição {pos + 1}: ')))
+    posicao.append(pos)
+print(f'Você digitou os valores {numeros}'
+      f'\nO maior valor digitado foi {max(numeros)} na posição {posicao()}'
+      f'\nO menor valor digitado foi {min(numeros)} na posição')
