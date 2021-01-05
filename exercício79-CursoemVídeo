@@ -1,0 +1,14 @@
+numbers = []
+while True:
+    numbers.append(int(input('\033[1mDigite um valor: ')))
+    print('Valor adicionado com sucesso...')
+    resp = str(input('Quer continuar? [S/N] ')).upper().strip()
+    if resp == 'N':
+        break
+    while resp not in 'SN':
+        resp = str(input('\033[1;31mERRO! DIGITE NOVAMENTE\033[m\n\033[1mQuer continuar? [S/N] ')).upper().strip()
+
+print()
+print('-_'*20)
+numbers.sort()
+print(f'Você digitou os valores {numbers}')
