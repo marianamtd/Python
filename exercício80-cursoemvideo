@@ -1,0 +1,6 @@
+valores = []
+valores.append(int(input('Digite um valor: ')))
+print('Add ao final da lista...')
+pri = int(input('Digite um valor: '))
+valores.insert(0,pri)
+print(valores)
