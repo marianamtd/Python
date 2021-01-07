@@ -1,6 +1,5 @@
 valores = []
-valores.append(int(input('Digite um valor: ')))
-print('Add ao final da lista...')
-pri = int(input('Digite um valor: '))
-valores.insert(0,pri)
-print(valores)
+for c in range(0,5):
+    n = int(input('Digite um número: '))
+    if c == 0:
+        valores.append(n)
