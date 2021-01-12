@@ -1,0 +1,14 @@
+valores = []
+pares = list()
+impares = list()
+for c in range(0, 6):
+    valores.append(int(input('Digite um valor: ')))
+for num in valores:
+    if (num % 2) == 0:
+        valores.append(impares)
+    else:
+        valores.append(pares)
+valores.clear()
+print(valores)
+print(pares)
+print(impares)
