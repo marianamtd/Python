@@ -1,5 +1,5 @@
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
-somapar = somacol = 0
+somapar = somacol = mai = 0
 for linha in range(0,3):
     for coluna in range(0,3):
         matriz[linha][coluna] = int(input(f'Digite um valor na posição [{linha}, {coluna}]: '))
@@ -19,3 +19,10 @@ print(f'O maior valor da segunda linha é {max(matriz[1])}') #maior número da s
 for linha in range(0,3):            # soma da coluna 3 (GUANABARA)
     somacol += matriz[linha][2]
 print(f'A soma da coluna terceira coluna é {somacol}')
+
+for coluna in range(0,3):           # soma da segunda linha (GUANABARA)
+    if coluna == 0:
+        mai = matriz[1][coluna]
+    elif matriz[1][coluna] > mai:
+        mai = matriz[1][coluna]
+print(mai)
