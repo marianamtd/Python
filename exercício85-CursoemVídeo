@@ -1,14 +1,11 @@
 valores = []
-pares = list()
-impares = list()
+num = 0
 for c in range(0, 6):
-    valores.append(int(input('Digite um valor: ')))
-for num in valores:
-    if (num % 2) == 0:
-        valores.append(impares)
+    num = int(input('Digite um valor: '))
+    if num % 2 == 0:
+        valores[0].append(num)
     else:
-        valores.append(pares)
-valores.clear()
+        valores[1].append(num)
+valores[1].sort()
+valores[0].sort()
 print(valores)
-print(pares)
-print(impares)
