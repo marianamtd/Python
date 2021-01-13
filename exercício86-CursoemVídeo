@@ -1,0 +1,9 @@
+matriz = []
+num = 0
+for c in range(0,9):
+    num = int(input('Digite um valor: '))
+    matriz.append(num)
+
+print(f'[{matriz[0]}] [{matriz[1]}] [{matriz[2]}]'
+      f'\n[{matriz[3]}] [{matriz[4]}] [{matriz[5]}]'
+      f'\n[{matriz[6]}] [{matriz[7]}] [{matriz[8]}]')
