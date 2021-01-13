@@ -1,12 +1,21 @@
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
-pares = []
+somapar = somacol = 0
 for linha in range(0,3):
     for coluna in range(0,3):
         matriz[linha][coluna] = int(input(f'Digite um valor na posição [{linha}, {coluna}]: '))
-
-'''for linha in range(0,3):    #posível print
+        if matriz[linha][coluna] % 2 == 0:          #soma dos pares
+            somapar += matriz[linha][coluna]
+        if coluna == 2:                             #soma da coluna 3
+            somacol += matriz[linha][coluna]
+for linha in range(0,3):
     for coluna in range(0,3):
-        print(f'[{matriz}')'''
-print(matriz[0])
-print(matriz[1])
-print(matriz[2])
+        print(f'[{matriz[linha][coluna]:^5}]', end='')
+    print()
+
+print(f'A soma dos pares foi {somapar}')
+print(f'A soma da coluna terceira coluna é {somacol}')
+print(f'O maior valor da segunda linha é {max(matriz[1])}') #maior número da segunda linha
+
+for linha in range(0,3):            # soma da coluna 3 (GUANABARA)
+    somacol += matriz[linha][2]
+print(f'A soma da coluna terceira coluna é {somacol}')
