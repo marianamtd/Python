@@ -1,4 +1,12 @@
-matriz = [[],[],[]]
+matriz = [[0,0,0],[0,0,0],[0,0,0]]
+pares = []
 for linha in range(0,3):
     for coluna in range(0,3):
-        matriz = int(input('Digite '))
+        matriz[linha][coluna] = int(input(f'Digite um valor na posição [{linha}, {coluna}]: '))
+
+'''for linha in range(0,3):    #posível print
+    for coluna in range(0,3):
+        print(f'[{matriz}')'''
+print(matriz[0])
+print(matriz[1])
+print(matriz[2])
