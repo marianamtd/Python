@@ -8,4 +8,5 @@ for c in range(0, 6):
         valores[1].append(num)
 valores[1].sort()
 valores[0].sort()
-print(valores)
+print(f'Os valores pares digitados foram: {valores[0]}'
+      f'\nOs valores ímpares digitados foram: {valores[1]}')
