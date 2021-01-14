@@ -1,0 +1,22 @@
+from random import randint
+from time import sleep
+print('--' * 20)
+print('JOGO DA MEGA SENA')
+print('--' * 20)
+lista = []
+jogos = []
+tot= 1
+quantidade = int(input(('Quantos jogos você quer que eu sorteie? ')))
+while tot <= quantidade:
+    count = 0
+    while True:              # para o número não repetir 
+        num = randint(1,60)
+        if num not in lista:
+            lista.append(num)
+            count += 1
+        if count >= 6:
+            break
+    lista.sort()
+    jogos.append(lista[:])
+    lista.clear()
+    tot += 1
