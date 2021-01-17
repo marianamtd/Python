@@ -1,0 +1,6 @@
+num = []
+for c in range(0,10):
+    num.append(float(input('Digite um valor real: ')))
+num.sort(reverse=True) #outra opção 
+num.reverse()
+print(num)
