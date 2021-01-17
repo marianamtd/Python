@@ -1,0 +1,4 @@
+num = []
+for c in range(0,5):
+    num.append(int(input('Digite um valor: ')))
+print(num)
