@@ -1,1 +1,7 @@
 # 4) Faça um Programa que leia um vetor de 10 caracteres, e diga quantas consoantes foram lidas. Imprima as consoantes.
+consoantes = []
+for letra in range(10):
+   letras = str(input('Digite uma letra: ')).lower().strip()
+   if letras in 'bcdfghjklmnpqrstvwxzy':
+       consoantes.append(letras)
+print(consoantes)
