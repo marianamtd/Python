@@ -1,1 +1,17 @@
 # 6) Faça um Programa que peça as quatro notas de 10 alunos, calcule e armazene num vetor a média de cada aluno, imprima o número de alunos com média maior ou igual a 7.0.
+
+boletim = []
+quant = 0
+count =  0
+for c in range(3):
+    nome = str(input('Nome do aluno: '))
+    n1 = float(input('Nota 1: '))
+    n2 = float(input('Nota 2: '))
+    n3 = float(input('Nota 3: '))
+    n4 = float(input('Nota 4: '))
+    media = (n1 + n2 + n3 + n4)/4
+    if media >= 7:
+        count += 1
+    boletim.append([nome, media])
+print(boletim)
+print(f'Foram {count} alunos notal com média maior ou igual a 7.')
