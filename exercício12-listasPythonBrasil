@@ -5,14 +5,27 @@
 alunos = []
 media = cont = soma = 0
 alturas = []
-idade = []
+idades = []
 
 for c in range(0,3):
     idade = int(input(f'Idade do {c + 1}º aluno: '))
     altura = float(input(f'Altura do {c + 1}º aluno:'))
     cont += 1
     alturas.append(altura)
-    media = alturas[c]
-    for media in alturas[c]:
-        soma += media
+    idades.append(idade)
+    media = sum(alturas)/float(len(alturas))   
 print(media)
+print(cont)
+# não to conseguindo colocar as idades maiores que 13 
+'''for j in range(len(idades)): 
+    if idades[j] >= 13:
+        if alturas[j] <= media:
+            cont += 1
+
+for c in range(len(idades)):
+    if idades[c] > 13:
+        if alturas[c] < media:
+            cont += 1'''
+print(media)
+print(cont)
+
