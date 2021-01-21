@@ -2,18 +2,18 @@ listaA = []
 listaB = []
 listaC = []
 listaD = []
-for c in range(0,2):
+for c in range(0,10):
     lista = int(input('\033[1;35mLista 1: '))
     listaA.append(lista)
 
-for c in range(0,2):
+for c in range(0,10):
     lista = int(input('\033[1;30;45mLista 2:\033[m '))
     listaB.append(lista)
 
-for c in range(0,2):
+for c in range(0,10):
     lista = int(input('\033[4;34;40mLista 3:\033[m '))
     listaC.append(lista)
-for numeros in range(0,2):
+for numeros in range(0,10):
     listaD.append(listaA[numeros])
     listaD.append(listaB[numeros])
     listaD.append(listaC[numeros])
