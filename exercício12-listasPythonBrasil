@@ -1,0 +1,18 @@
+# 12) Foram anotadas as idades e alturas de 30 alunos.
+# Faça um Programa que determine quantos alunos com mais de 13 anos
+# possuem altura inferior à média de altura desses alunos.
+
+alunos = []
+media = cont = soma = 0
+alturas = []
+idade = []
+
+for c in range(0,3):
+    idade = int(input(f'Idade do {c + 1}º aluno: '))
+    altura = float(input(f'Altura do {c + 1}º aluno:'))
+    cont += 1
+    alturas.append(altura)
+    media = alturas[c]
+    for media in alturas[c]:
+        soma += media
+print(media)
