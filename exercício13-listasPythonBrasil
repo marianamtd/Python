@@ -2,12 +2,22 @@
 # Após isto, calcule a média anual das temperaturas e mostre todas as temperaturas acima da média anual,
 # e em que mês elas ocorreram (mostrar o mês por extenso: 1 – Janeiro, 2 – Fevereiro, . . . ).
 
-meses = ['Janeiro', 'Fevereiro', 'Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro',
-         'Novembro','Dezembro']
+meses = [['Janeiro', 'Fevereiro', 'Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro',
+         'Novembro','Dezembro'],[]]
 temperatura = []
 media = 0
-for c in range(0,12):
+acimaMedia = {}
+for c in range(len(meses)):
     mes = float(input(f'Digite a temperatura do {c + 1}º mês: '))
-    meses.append(mes)
-    media = sum(meses)/len(meses)
+    temperatura.append(mes)
+    media = sum(temperatura)/len(temperatura)
+
+# não estou conseguindo fazer essa parte
+for c in range(len(meses)):
+    if (temperatura[c] > media):
+        acimaMedia.update({meses[c]: temperatura[c]})
+
+
+print(meses)
+print(temperatura)
 print(media)
