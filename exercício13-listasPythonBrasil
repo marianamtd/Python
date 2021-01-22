@@ -21,3 +21,22 @@ for c in range(len(meses)):
 print(meses)
 print(temperatura)
 print(media)
+
+# resolução
+def extenso(ind):
+    meses = ['Janeiro', 'Fevereiro','Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+    return meses[ind]
+
+media = lambda x: sum(x)/len(x)
+
+tempano = [] #criar a lista de temperaturas anual vazia
+for i in range(12):
+    temp = float(input('Digite a temperatura do mês:'))
+    tempano.append(temp) 
+
+mediano = media(tempano)
+
+for t in range(len(tempano)):
+    if tempano[t] > mediano:
+        mes = extenso(t)
+        print('temperatura {0:.2f} maior que a média anual {1:.2f} ocorrida no mês: {2}'.format(tempano[t], mediano, mes))
